@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AcceuilComponent } from './composants/acceuil/acceuil.component';
 import { SuperPipe } from './super.pipe';
+import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AcceuilComponent,
-    SuperPipe
+    SuperPipe,
+    ListmaterielComponent
   ],
   imports: [
     BrowserModule,
