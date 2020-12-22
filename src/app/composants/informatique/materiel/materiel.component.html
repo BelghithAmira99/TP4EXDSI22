@@ -1,4 +1,17 @@
-<img [src]="m.photo" alt="photo">
-        {{m.libelle}} <span [ngClass]="{'badge badge-primary':m.hautGamme,'badge badge-dark':!m.hautGamme}"> Prix: {{m.prix}}DT
+     <div class="card text-center">
+            <div class="card-header">
+                {{m.libelle|titlecase}}
+            </div>
+            <div class="card-body">
+                <img [src]="m.photo" alt="photo">
+                <br>
+       <span [ngClass]="{'badge badge-primary':m.hautGamme,'badge badge-dark':!m.hautGamme}"> 
+           
+           Prix: {{m.prix}}DT
         <i [ngClass]="{'fa fa-thumbs-up':m.hautGamme}"></i>
         </span>
+            </div>
+            <div class="card-footer text-muted">
+                <button type="button" class="btn btn-primary">Détails</button>
+            </div>
+        </div>
